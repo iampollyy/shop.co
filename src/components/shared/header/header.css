@@ -1,0 +1,30 @@
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 30px 100px;
+  }
+  .header_content{
+    width: 100%;
+     display: flex;
+     justify-content: space-between;
+  }
+  
+  .header_content h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+  .burger_menu{
+    display: none;
+  }
+  
+  .nav{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  
+  .icons-font{
+    font-size: 1.25rem;
+  }

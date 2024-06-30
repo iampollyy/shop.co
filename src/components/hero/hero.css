@@ -1,0 +1,112 @@
+.hero{
+    height: 100vh;
+    background-image: url(/src/assets/images/couple.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+    position: relative;
+  }
+  .starBig{
+    position: absolute;
+    top: 0;
+    right: 81px;
+  }
+  
+  .starSmall{
+    position: absolute;
+    top: 128px;
+    right: 634px;
+  }
+  .hero_column{
+    max-width: 577px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+  
+  .hero_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  
+  .main-title{
+    color: rgba(0, 0, 0, 1);
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    font-family: 'Poppins';
+  }
+  
+  .main-paragraph{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    font-family: "Rubik";
+  }
+  
+  .button{
+    padding: 16.5px 66.5px;
+    border-radius: 62px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Rubik';
+    line-height: 1.2rem;
+    background-color: #000;
+  }
+  
+  .button:hover{
+    background-color: #323232;
+    transition: ease-in-out;
+  }
+  
+  .stats{
+    max-width: 617px;
+    width:100%;
+    display: flex;
+  
+  }
+  
+  .stats_upper{
+    display: flex;
+  }
+  
+  .stats_block{
+    max-width: 230px;
+    width: 100%;
+    text-wrap: nowrap;
+    
+  }
+  
+  .stats_block h5{
+    font-family: 'Rubik';
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.96rem;
+  
+  }
+  .stats_block p{
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.37rem;
+  color:rgba(0, 0, 0, 0.6)
+  
+  }
+  .stats_upper>.stats_block{
+    padding-right: 2rem;
+  }
+  .stats>.stats_block{
+    padding-left: 2rem;
+  }
+  .stats_upper .stats_block:nth-child(2){
+    border-left:1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 2rem;
+  }

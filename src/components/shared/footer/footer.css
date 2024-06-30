@@ -1,0 +1,148 @@
+
+.bottom{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 140px 100px 80px;
+  position: relative;
+  margin-top: 180px;
+}
+
+.bottom_container{
+  max-width: 1240px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 108px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.newsettler{
+  width: 1240px;
+  border-radius: 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -95px;
+}
+
+.newsettler_wrapper{
+  width: 100%;
+  padding: 36px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsettler_text{
+  max-width: 550px;
+  width: 100%;
+  color: #FFF;
+  font-family: 'Poppins';
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.subscription_form{
+  max-width: 350px;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-control{
+  border-radius: 62px;
+}
+
+.submit{
+  background-color: rgba(255 255 255 1);
+  border-radius: 62px;
+  padding: 12px 81px;
+  font-family: "Rubik";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.18rem;
+}
+
+.submit:hover{
+  transition: ease-in-out;
+  background-color: rgb(211, 225, 226);
+}
+
+.bottom_row{
+  flex-wrap: nowrap;
+  gap: 108px;
+  padding-bottom: 50px;
+}
+
+.column{
+  max-width: 150px;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.column_content{
+  font-size: 1rem;
+  line-height: 1.18rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column h3{
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.12rem;
+  letter-spacing: 3px;
+}
+
+.shop{
+  max-width: 248px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-wrap: pretty;
+}
+
+.shop h3{
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.shop p{
+  font-family: "Rubik";
+  font-size: 0.87rem;
+  font-weight: 400;
+  line-height: 1.37rem;
+}
+
+.social_media{
+  max-width: 148px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.payments{
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,125 @@
+.main{
+    padding: 27px 100px 40px;
+    display: flex;
+    gap: 1.25rem;
+}
+.filters{
+    max-width: 295px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 24px;
+    border:1px solid #0000001A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.filters_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi-sliders2-vertical{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: grey;
+}
+
+.filter_title{
+    font-family: 'Rubik';
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.48rem;
+    color: #000;
+
+}
+
+.sorting_ways{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.pricing_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-chevron-up{
+    color: #000;
+}
+.prcice_range{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apply_filter, .reset_filter{
+    border: none;
+    border-radius: 62px;
+    padding: 16px 84px;
+    font-family: 'Rubik';
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 1.06rem;
+    background-color: #F2F0F1;
+    color: #000;
+    text-wrap: nowrap;
+
+
+}
+
+.apply_filter{
+    background-color: #000;
+    color: #fff;
+}
+
+.noUi-target{
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin: 20px 0 24px;
+}
+
+.noUi-base {
+    height: 6px;
+    outline: none;
+    border: none;
+  }
+  
+  .noUi-tooltip {
+    top: 120%;
+    border: none;
+    background: none;
+  }
+  
+  .noUi-connect {
+    background: #000;
+    transform: translate(16%, 0) scale(0.732741, 1);
+    top: 0;
+  }
+  
+  .noUi-horizontal .noUi-handle {
+    width: 20px;
+    height: 20px;
+    top: -7px;
+    right: -3px;
+  }
+  
+  .noUi-handle {
+    border-radius: 50%;
+    background-color: #000;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .noUi-handle::after {
+    display: none;
+  }
+  
+  .noUi-handle::before {
+    display: none;
+  }

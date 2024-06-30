@@ -1,5 +1,7 @@
 import './style.css';
+import router from './app/router/router';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <section>Shop.co</section>
-`;
+document.addEventListener('DOMContentLoaded', () => {
+  router.resolve();
+});
+

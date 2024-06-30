@@ -27,5 +27,10 @@
   },
   "lint-staged": {
     "**/*": "prettier . --write --ignore-unknown"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "navigo": "^8.11.1",
+    "nouislider": "^15.8.1"
   }
 }
