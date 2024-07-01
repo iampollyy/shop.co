@@ -16,8 +16,7 @@ export function breadCrumbsCreator() {
   app?.appendChild(newCrumbs)
   const breadCrumbs = document.querySelector("#breadcrumbs")
   const route = window.location.pathname.split('/').slice(2)
-  console.log(breadCrumbs)
-
+ 
   route.forEach( async (pathPart, i) => {
     let pathName =
         pathPart.charAt(0).toUpperCase() +

@@ -4,11 +4,10 @@ import { getProductsByCategory } from "./getProductsByCategory";
 export async function getSortedProducts(categoryId: string, selectedType: string, min: string, max: string) {
   const products = await getProductsByCategory(categoryId);
 
-  console.log(min,max)
+ 
   const sortedByPriceProducts = products.products.filter((product: TProduct) => {
     return product.price >= Number(min) && product.price <= Number(max);
   });
-  console.log(sortedByPriceProducts);
 
   switch (selectedType) {
     case 'asc': {
@@ -22,12 +21,9 @@ export async function getSortedProducts(categoryId: string, selectedType: string
       });
     }
     default: {
-      console.log(sortedByPriceProducts);
+
       return sortedByPriceProducts;
     }
   }
-
-
-  console.log(sortedByPriceProducts)
 
 }

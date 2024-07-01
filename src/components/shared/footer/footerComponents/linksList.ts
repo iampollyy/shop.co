@@ -8,7 +8,7 @@ export function createLinks(title: string, links: Link[]) {
         ])
     );
  
-    const list = elementCreator('ul', ['column_contrnt'], [], listItems);
+    const list = elementCreator('ul', ['column_content'], [], listItems);
     const column = elementCreator('div', ['column', 'col-12', 'col-md-6'], [], [
         elementCreator('h3', [], [], [title]),
         list
