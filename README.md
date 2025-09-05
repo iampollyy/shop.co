@@ -1,3 +1,13 @@
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/dfa764f2-ab4c-497b-9f0c-109a78e888f6" />
+<img width="1894" height="856" alt="image" src="https://github.com/user-attachments/assets/1f3049af-a421-4ea1-ac08-a029f069ecb5" />
+<img width="1910" height="859" alt="image" src="https://github.com/user-attachments/assets/1068b591-8700-4a31-b3b4-67998d9ae4c9" />
+<img width="1813" height="866" alt="image" src="https://github.com/user-attachments/assets/ade1bf10-567e-4b86-91aa-a22ddd7bf5fb" />
+<img width="1669" height="828" alt="image" src="https://github.com/user-attachments/assets/7d7a47b5-8ea8-495b-b0b6-4b4d80e639bd" />
+
+
+
+
+
 # Hometask TypeScript Vite DOM API
 
 Your task is to develop webpages (see Pages section down below) according to the provided Figma design.
