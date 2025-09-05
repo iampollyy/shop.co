@@ -113,15 +113,6 @@ Figma design link: https://www.figma.com/design/Q0zYyVhjvTQMKg8tqtUPLB/E-commerc
 - STAY UPTO DATE ABOUT... form component
 - Footer
 
-## Evaluation criteria - max 10 points
-
-### Render of pages (HTML, CSS, TS) - maximum 6 points
-
-- Homepage <b>2 points</b>
-- Category Page <b>2 points</b>
-- Product Detail Page <b>2 points</b>
-
-### Usage of Backend - 1 point
 
 ### Usage of Navigo - 1 point
 
