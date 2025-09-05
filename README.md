@@ -5,125 +5,134 @@
 <img width="1669" height="828" alt="image" src="https://github.com/user-attachments/assets/7d7a47b5-8ea8-495b-b0b6-4b4d80e639bd" />
 
 
+# Hometask: TypeScript Vite DOM API Project 🌐
 
+This project involves creating a series of fully functional webpages based on the provided **Figma design** while adhering to modern web development standards. Below is a simplified breakdown of the technical requirements and page components.
 
+[Figma Design Link](https://www.figma.com/design/Q0zYyVhjvTQMKg8tqtUPLB/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&t=4ZgOl1BpZ6sfCMRZ-0)
 
-# Hometask TypeScript Vite DOM API
+---
 
-Your task is to develop webpages (see Pages section down below) according to the provided Figma design.
+## 🚀 Tech Stack
 
-Figma design link: https://www.figma.com/design/Q0zYyVhjvTQMKg8tqtUPLB/E-commerce-Website-Template-(Freebie)-(Community)?node-id=0-1&t=4ZgOl1BpZ6sfCMRZ-0
+- **Frontend Framework/Tools:**
+  - [Vite 5](https://vitejs.dev/)  
+  - [TypeScript 5](https://www.typescriptlang.org/)  
+  - DOM API for dynamic content creation (**three approaches provided below**).  
 
-## Technical Requirements
+- **Styling:**
+  - HTML5 & CSS3/SCSS/SASS.  
+  - Used libraries like:
+    - [Bootstrap](https://getbootstrap.com/)  
+     
 
-- Vite 5 https://vitejs.dev/
-- TypeScript 5 https://www.typescriptlang.org/
-- HTML5 https://www.w3.org/TR/2011/WD-html5-20110405/
-- CCS3/SCSS/SASS/Less or any other approach
-- CSS libraries (with required JS/TS for some components like Modals, Tabs, Pagination, etc), possible choise:
-  - Tailwind CSS https://tailwindcss.com/
-  - Bulma https://bulma.io/
-  - Bootstrap https://getbootstrap.com/
-  - See more at https://github.com/troxler/awesome-css-frameworks
-- Router Navigo https://www.npmjs.com/package/navigo
-- Fonts
-  - Rubik https://fonts.google.com/specimen/Rubik
-  - Poppins https://fonts.google.com/specimen/Poppins
-- Fetch API https://learn.javascript.ru/fetch-api
-- Backend https://dummyjson.com/docs/products
+- **Routing:**  
+  - [Navigo Router](https://www.npmjs.com/package/navigo).  
 
-## Pages
+- **Backend:**  
+  - [DummyJSON API](https://dummyjson.com/docs/products) for fetching data.  
 
-- Homepage Desktop
-- Category Page Desktop
-- Product Detail Page Desktop
+- **Fonts:**  
+  - [Rubik](https://fonts.google.com/specimen/Rubik).  
+  - [Poppins](https://fonts.google.com/specimen/Poppins).  
 
-**All pages should be implemented using DOM API. 3 ways how to do it**
+- **Advanced Features:**  
+  - Fetch API for data loading.  
+  - DOM manipulation with:
+    1. `document.createElement()` (append dynamically).
+    2. HTML templates with `innerHTML`.
+    3. Template strings for rendering UI components.
 
-- `createElementWithDocumentCreateElementAndAppend` approach
-  - HTML example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithDocumentCreateElementAndAppend.html
-  - JS example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithDocumentCreateElementAndAppend.js
-- `createElementWithTemplateHTMLElementTag` approach
-  - HTML example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithTemplateHTMLElementTag.html
-  - JS example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithTemplateHTMLElementTag.js
-- `createElementWithTemplateString` approach
-  - HTML example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithTemplateString.html
-  - JS example: https://autocode.git.epam.com/esde-js-ts/frontend-lecture-sandbox/-/blob/lecture-24-04-2024-dom-api/createElementWithTemplateString.js
+---
 
-### Homepage Desktop
+## 🖥️ Pages Overview
 
-<details>
-<summary>Design</summary>
-<img src="design\homepage\Homepage Desktop.jpg">
-</details>
+### 1. **Homepage Desktop**  
+**Components:**  
+- **Header:** Displays title and icons.  
+- **Hero Section:** Includes a title, an image, and other elements.  
+- **Categories Grid:**  
+  - Dynamically loads categories from the backend (API: `/products/categories`).  
+  - Each category item is clickable and navigates to `/category/:categoryName`.  
+- **Newsletter Signup Form:** ("Stay up to date about...")  
+- **Footer**  
 
-#### Components
+---
 
-- Header (shop.co title and two icons)
-- Hero (FIND ANYTHING... title, an image, and all the rest components inside Hero section)
-- Categories grid
-  - Each category should be loaded from the Backend (see https://dummyjson.com/docs/products#products-category_list)
-  - After load each category should be displayed in its own grey square according to the provided figma design (label inside make simple black)
-  - Each category item must be clickable, click on each nagigates (Navigo) to the Category Page route `/category/:categoryName` where `categoryName` is the unique name taking from the backend response (see https://dummyjson.com/docs/products#products-category_list)
-- STAY UPTO DATE ABOUT... form component
-- Footer
+### 2. **Category Page Desktop**  
+**Components:**  
+- **Header:** Displays title and icons.  
+- **Breadcrumbs:**  
+  - Dynamic navigation:  
+    - "Home" link navigates to `/`.  
+    - "Groceries" shows the current `categoryName`.  
+- **Products Grid:**  
+  - Dynamically loads products for the given category (API: `/products/category/:categoryName`).  
+  - Each product displays:  
+    - Title, image, price, and description.  
+    - Click on a product to navigate to `/:categoryName/:productId`.  
+- **Filters:**  
+  - **Sort:** Ascending/Descending by price.  
+  - **Price Range:** Adjustable slider for min/max price filtering.  
+  - **Apply/Reset Filters:** Filter products dynamically.  
+- **Newsletter Signup Form**  
+- **Footer**  
 
-### Category Page Desktop
+---
 
-<details>
-<summary>Design</summary>
-<img src="design\category\Category Page Desktop.jpg">
-</details>
+### 3. **Product Detail Page Desktop**  
+**Components:**  
+- **Header:** Displays title and icons.  
+- **Breadcrumbs:**  
+  - "Home" navigates to `/`.  
+  - Current category displays as "Groceries".  
+  - Current product displays as "Tree oil 300ml".  
+- **Product Details Grid:**  
+  - Dynamically loads details for the selected product (API: `/products/:productId`).  
+  - Displays:
+    - Title, rating, description, price, discount percentage, brand, stock, and images (gallery).  
+- **Newsletter Signup Form**  
+- **Footer**  
 
-#### Components
+---
 
-- Header (shop.co title and two icons)
-- Breadcrumbs (Home label on click must navigate to `/` page (Homepage)), Groceries label must be a label containg current `categoryName` (taking from navigo)
-- Products grid
-  - Each product should be loaded from the Backend accorindg to the `categoryName` (see https://dummyjson.com/docs/products#products-category)
-  - After load each product should be displayed in its own card component according to the provided figma design
-  - Each product item must be clickable, click on each nagigates (Navigo) to the Product Detail Page route `/:categoryName/:productId` where `productId` is the unique name taking from the backend response (see https://dummyjson.com/docs/products#products-category)
-- Filters
-  - Sort
-    - Click on `Ascending` label must change sort order of the products (from the lowest price to the highest)
-    - Click on `Descending` label must change sort order of the products (from the highest price to the lowest)
-  - Price
-    - Changing slider specify the minimal and maximum price of the product
-  - Click on `Apply Filter` button taking select values from Sort and Price components and filter products in the Product grid
-  - Click on `Reset Filter` button set sort to the default value (Ascending) and price to the default value (min 0 max 1000)
-- STAY UPTO DATE ABOUT... form component
-- Footer
+## 🛠️ DOM API Creation Approaches
 
-### Product Detail Page Desktop
+1. **`document.createElement()` Approach:**  
+ 
+2. **HTML Templates with `innerHTML`:**  
+  
+3. **Template Strings for Rendering:**  
+  
 
-<details>
-<summary>Design</summary>
-<img src="design\product detail\Product Detail Page Desktop.jpg">
-</details>
+## 📦 Running the Project
 
-#### Components
+1. Clone the repository.  
+2. Install dependencies:  
+   ```bash
+   npm install
+   ```
+3. Start the development server:  
+   ```bash
+   vite serve
+   ```
 
-- Header (shop.co title and two icons)
-- Breadcrumbs
-  - (Home label on click must navigate to `/` page (Homepage)),
-  - Groceries label must be a label containg current `categoryName` (taking from navigo)
-  - Tree oil 300ml label must a label containg current `productId` (taking from navigo)
-- Product details grid
-  - Each product should be loaded from the Backend (see https://dummyjson.com/docs/products#products-single)
-  - After load display product data according to the provided figma design
-  - Data to be displayed:
-    - title ("Tree oil 30ml label" in the Figma design)
-    - rating ("4.5/5" in the Figma design)
-    - description ("The tree oil contains..."" grey text in the Figma design)
-    - price ("$260" in the Figma design)
-    - discountPercentage ("-40%" in the Figma design)
-    - brand ("Hemani Tea" in the Figma design)
-    - stock ("78 items" in the Figma design)
-    - images (3 images put in the image gallery + one random image as a 4th one)
-- STAY UPTO DATE ABOUT... form component
-- Footer
+---
 
+## 🌟 Key Backend Endpoints
 
-### Usage of Navigo - 1 point
+- **Categories:** `/products/categories`.  
+- **Products by Category:** `/products/category/:categoryName`.  
+- **Product Details:** `/products/:productId`.  
 
-### Usage of DOM API - 2 point
+---
+
+## ✨ Future Enhancements
+
+- Add mobile responsiveness and adaptivity.  
+- Implement additional product filters (e.g., by brand or rating).  
+- Include animations for better user experience.  
+
+---
+
+Feel free to explore or give a feedback!
